@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos Municipais - Prefeitura de Labrea</title>
+    <link rel="shortcut icon" href="img/iconn.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!-- Link para o Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="acessibilidade">
+        <p><a href="#conteudo">Ir para o conteúdo</a></p>
+        <p><a href="#menu">Ir para o menu</a></p>
+        <p><a href="#busca">Ir para a busca</a></p>
+        <p><a href="#rodape">Ir para o rodapé</a></p>
+        <div class="acessibilidade-opcoes">
+            <p>Acessibilidade:</p>
+            <a href="#" class="acessibilidade-link">Alto Contraste</a>
+            <a href="#" class="acessibilidade-link">Mapa do Site</a>
+            <a href="#" class="acessibilidade-link">Libras</a>
+            <div class="controle-tamanho-fonte">
+                <span>Tamanho da Fonte:</span>
+                <button class="btn-tamanho" id="diminuir-font">A-</button>
+                <button class="btn-tamanho" id="aumentar-font">A+</button>
+            </div>
+        </div>
+    </div>
+    
+    <header>
+        <div class="logo">
+            <img src="img/iconn.png" alt="Logo da Prefeitura">
+        </div>
+        <!-- Navbar de informações -->
+<nav class="navbar">
+    <ul>
+        <li><a href="#politica-cookies">Política de Cookies</a></li>
+        <li><a href="#acesso-informacao">Acesso à Informação</a></li>
+        <li><a href="#transparencia">Transparência</a></li>
+        <li><a href="#teclas-atalho">Teclas de Atalho</a></li>
+    </ul>
+</nav>
+
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar...">
+            <button></button>
+        </div>
+        
+    </header>
+    <!-- Caixa de Libras no canto direito -->
+<div class="libras-caixa">
+    <a href="#" title="Libras">
+        <i class="fas fa-sign-language"></i>
+    </a>
+</div>
+    <main>
+        <button class="sidebar-toggle" aria-label="Toggle sidebar">MENU ☰</button>
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Concursos</a>
+                        <ul class="sub-menu">
+                            <li><a href="#concursos-2024">CONCURSOS 2024:</a></li>
+                            <li><a href="#concursos-2023">CONCURSOS 2023:</a></li>
+                            <li><a href="#concursos-2022">CONCURSOS 2022:</a></li>
+                            <li><a href="#concursos-2021">CONCURSOS 2021:</a></li>
+                            <li><a href="#concursos-2019">CONCURSOS 2019:</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#acesso-informacao">Diário Oficial</a></li>
+                    <li><a href="#contas-publicas">Funcionário</a></li>
+                    <li><a href="#licitacoes">Licitações</a></li>
+                    <li><a href="#noticias">Processos Seletivo</a></li>
+                    <li><a href="#portal-transparencia">Cultura</a></li>
+                    <li><a href="#processos-seletivos">Secretarias</a></li>
+                    <li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="carousel">
+            <div class="carousel-inner">
+                <!-- Primeiro Slide -->
+                <div class="carousel-item item-1 active">
+                    <h2 class="carousel-title">Operação Cidade Limpa</h2>
+                    <img src="img/op.jpeg" alt="Homem trabalhando para a Operação Cidade Limpa.">
+                    <div class="carousel-overlay">
+                        <a href="https://www.labea.gov.br/seguranca-publica" class="carousel-link">Prefetura está a todo vapor para a Operação Cidade Limpa.</a>
+                    </div>
+                </div>
+        
+                <!-- Segundo Slide -->
+                <div class="carousel-item item-2">
+                    <h2 class="carousel-title">Educação</h2>
+                    <img src="https://educacaodobrasil.com/wp-content/uploads/2020/10/Educacao-Basica-No-Brasil-1-scaled.jpg" alt="Slide 2">
+                    <div class="carousel-overlay">
+                        <a href="https://www.labea.gov.br/seguranca-publica" class="carousel-link">Conheça as ações voltadas para a Educação.</a>
+                    </div>
+                </div>
+        
+                <!-- Terceiro Slide -->
+                <div class="carousel-item item-3">
+                    <h2 class="carousel-title">Segurança Pública</h2>
+                    <img src="https://th.bing.com/th/id/OIP.IaRSLygBuFAyHHi62WyHTQHaE6?rs=1&pid=ImgDetMain" alt="Slide 3">
+                    <div class="carousel-overlay">
+                        <a href="https://www.labea.gov.br/seguranca-publica" class="carousel-link">Conheça as ações voltadas para a segurança pública</a>
+                    </div>
+                </div>
+            </div>
+        
+            <button id="prevSlide" class="carousel-arrow left" onclick="prevSlide()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="nextSlide" class="carousel-arrow right" onclick="nextSlide()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        
+            <div class="carousel-indicators">
+                <button id="indicator1" class="active" onclick="goToSlide(0)"></button>
+                <button id="indicator2" onclick="goToSlide(1)"></button>
+                <button id="indicator3" onclick="goToSlide(2)"></button>
+            </div>
+        </div>
+         <br>
+        <section class="news-section">
+            <h2 class="news-title">Últimas Notícias</h2>
+            <div class="news-container">
+                <!-- Notícia 1 -->
+                <div class="news-item">
+                    <img src="https://files.reporterparintins.com.br/documents/286878_g.jpg" alt="Notícia 1" class="news-image">
+                    <div class="news-content">
+                        <h3 class="news-heading">Borracha amazonense também está no solado dos calçados produzidos pela Veja </h3>
+                        <p class="news-description">Extrativistas de Lábrea assistidos pelo Idam recebem R$ 1,4 milhão por venda de borracha e pagamento de subvenção.</p>
+                        <a href="#" class="news-link">Leia mais</a>
+                    </div>
+                </div>
+        
+                <!-- Notícia 2 -->
+                <div class="news-item">
+                    <img src="img/img1.jpeg" alt="Notícia 3" class="news-image">
+                    <div class="news-content">
+                        <h3 class="news-heading">Combate à Influenza em Lábrea: Ações Intensificadas na Sexta-feira, 17 de Janeiro</h3>
+                        <p class="news-description">A Prefeitura de Lábrea intensificou as ações de combate à influenza na sexta-feira, 17 de janeiro. Equipes de saúde realizaram mutirões de vacinação e campanhas de conscientização em diversos bairros da cidade.</p>
+                        <a href="#" class="news-link">Leia mais</a>
+                    </div>
+                </div>                
+        
+                <!-- Notícia 3 -->
+                <div class="news-item">
+                    <img src="img/img3.jpeg" alt="Notícia 4" class="news-image">
+                    <div class="news-content">
+                        <h3 class="news-heading">Prefeitura de Lábrea Reafirma Cooperação com o Centro Esperança</h3>
+                        <p class="news-description">Em uma reunião realizada na sexta-feira, 17 de janeiro, a Prefeitura de Lábrea reafirmou sua cooperação com o Centro Esperança. O objetivo é fortalecer as ações conjuntas voltadas para a saúde e o bem-estar da população local.</p>
+                        <a href="#" class="news-link">Leia mais</a>
+                    </div>
+                </div>                
+                <h2 class="titulo-servicos">Outros Serviços</h2>
+                <div class="servicos-destaque">
+                    <div class="servico">
+                        <h3><i class="fas fa-university"></i> Portal da Transparência</h3>
+                        <p>Informações sobre a transparência pública e acessos aos dados do governo.</p>
+                        <div class="barra"></div>
+                    </div>
+                    <div class="servico">
+                        <h3><i class="fas fa-headset"></i> Ouvidoria</h3>
+                        <p>Canal para recebimento de denúncias, sugestões e reclamações da população.</p>
+                        <div class="barra"></div>
+                    </div>
+                    <div class="servico">
+                        <h3><i class="fas fa-info-circle"></i> Serviço de Informação ao Cidadão</h3>
+                        <p>Acesso às informações públicas, conforme a Lei de Acesso à Informação.</p>
+                        <div class="barra"></div>
+                    </div>
+                    <div class="servico">
+                        <h3><i class="fas fa-gavel"></i> Site do Poder Legislativo</h3>
+                        <p>Acesso ao portal do poder legislativo e suas atividades.</p>
+                        <div class="barra"></div>
+                    </div>
+                    <div class="servico">
+                        <h3><i class="fas fa-scroll"></i> Carta de Serviços</h3>
+                        <p>Lista e descrição dos serviços públicos oferecidos ao cidadão.</p>
+                        <div class="barra"></div>
+                    </div>
+                    <div class="servico">
+                        <h3><i class="fas fa-newspaper"></i> Publicações</h3>
+                        <p>Acesso a todas as publicações oficiais do governo.</p>
+                        <div class="barra"></div>
+                    </div>
+                    <div class="servico">
+                        <h3><i class="fas fa-file-alt"></i> Emissão de NFS-e</h3>
+                        <p>Emissão da Nota Fiscal de Serviços Eletrônica (NFS-e) para prestadores de serviços.</p>
+                        <div class="barra"></div>
+                    </div>
+                    <div class="servico">
+                        <h3><i class="fas fa-file-invoice"></i> Emissão de NFS-e para MEI</h3>
+                        <p>Emissão de NFS-e destinada a Microempreendedores Individuais (MEI).</p>
+                        <div class="barra"></div>
+                    </div>
+                    <div class="servico">
+                        <h3><i class="fas fa-users-cog"></i> Portal do Servidor</h3>
+                        <p>Informações e serviços destinados aos servidores públicos.</p>
+                        <div class="barra"></div>
+                    </div>
+                    <div class="servico">
+                        <h3><i class="fas fa-signal"></i> Junta Militar</h3>
+                        <p>Informações sobre alistamento militar e serviços relacionados.</p>
+                        <div class="barra"></div>
+                    </div>
+                    <div class="servico">
+                        <h3><i class="fas fa-book"></i> Diário Oficial do Amazonas</h3>
+                        <p>Acesso às publicações oficiais do governo do Amazonas.</p>
+                        <div class="barra"></div>
+                    </div>
+                    <div class="servico">
+                        <h3><i class="fas fa-search"></i> Radar da Transparência Pública - ATRICON</h3>
+                        <p>Plataforma que acompanha e avalia a transparência pública no Brasil.</p>
+                        <div class="barra"></div>
+                    </div>
+                    <div class="servico">
+                        <h3><i class="fas fa-users"></i> Conselho Tutelar</h3>
+                        <p>Serviço de proteção e garantia dos direitos das crianças e adolescentes.</p>
+                        <div class="barra"></div>
+                    </div>
+                    <div class="servico">
+                        <h3><i class="fas fa-envelope"></i> Webmail</h3>
+                        <p>Acesso ao sistema de e-mail institucional para servidores públicos.</p>
+                        <div class="barra"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <div class="status-cidade">
+            <div class="status-cidade">
+                <div class="status-item" id="clima-tempo">
+                    <h3>Clima Tempo</h3>
+                    <p>Temperatura: <span id="temperatura">30°C</span></p>
+                    <p>Previsão: <span id="previsao">Ensolarado</span></p>
+                    <!-- Ícone animado de clima -->
+                    <i class="fas fa-sun clima-icon"></i>
+                </div>
+                
+                <div class="status-item">
+                    <h3>Nível do Rio Negro</h3>
+                    <p>Nível: <span id="nivel-rio">16.5m</span></p>
+                    <!-- Ícone de nível de água com animação -->
+                    <i class="fas fa-water nivel-rio-icon"></i>
+                </div>                               
+        </div>
+              
+    </main>
+    <footer>
+        <p class="footer-logo">
+            <a href="#"><img src="img/iconn.png" alt="Logo da Prefeitura" class="footer-img"></a>
+        </p>
+        <div class="footer-wrapper">
+            <!-- Seção alinhada à esquerda -->
+            <div class="footer-info-left">
+                <p>&copy; 2024 Prefeitura Municipal de Labrea</p>
+                <p>Razão Social: Município de Labrea</p>
+                <p>CNPJ: 46.313.714/0001-50</p>
+                <p>(97) 0000-0000</p>
+            </div>
+            <div class="social-media">
+                <p>Siga-nos:</p>
+                <div id="social-mediasub">
+                    <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <!-- Seção centralizada -->
+            <div class="footer-info-center">    
+                <p><a href="#">Política de Privacidade</a></p>
+                <p><a href="#">Lei Geral de Proteção de Dados</a></p>
+                <p><a href="#">Mapa do Site</a></p>
+            </div>
+        </div>
+    </footer>
+    <div class="linha-colorida"></div>
+    <script>
+      let currentSlide = 0;
+let autoSlideInterval; // Variável para armazenar o intervalo automático
+
+function updateCarousel() {
+    const slides = document.querySelectorAll('.carousel-item');
+    const indicators = document.querySelectorAll('.carousel-indicators button');
+
+    slides.forEach((slide, index) => {
+        slide.classList.toggle('active', index === currentSlide);
+    });
+
+    indicators.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === currentSlide);
+    });
+
+    const carouselInner = document.querySelector('.carousel-inner');
+    carouselInner.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+
+function prevSlide() {
+    const slides = document.querySelectorAll('.carousel-item');
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateCarousel();
+}
+
+function nextSlide() {
+    const slides = document.querySelectorAll('.carousel-item');
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateCarousel();
+}
+
+function goToSlide(slideIndex) {
+    currentSlide = slideIndex;
+    updateCarousel();
+}
+
+// Função para iniciar o carrossel automático
+function startAutoSlide() {
+    autoSlideInterval = setInterval(nextSlide, 5000); // Altere 5000 para o intervalo desejado (em milissegundos)
+}
+
+// Função para parar o carrossel automático (opcional, útil em eventos de interação do usuário)
+function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    updateCarousel();
+    startAutoSlide(); // Inicia o carrossel automático ao carregar a página
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.querySelector(".sidebar-toggle");
+    const sidebar = document.querySelector(".sidebar");
+
+    toggleButton.addEventListener("click", () => {
+        sidebar.classList.toggle("active");
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const submenuItems = document.querySelectorAll('.has-submenu > a');
+
+    submenuItems.forEach((item) => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault(); // Evita o comportamento padrão do link
+
+            const parent = item.parentElement;
+            const isActive = parent.classList.contains('active');
+
+            // Fecha todos os outros submenus
+            document.querySelectorAll('.has-submenu').forEach((el) => {
+                el.classList.remove('active');
+            });
+
+            // Alterna o estado do submenu clicado
+            if (!isActive) {
+                parent.classList.add('active');
+                item.setAttribute('aria-expanded', 'true');
+            } else {
+                item.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
